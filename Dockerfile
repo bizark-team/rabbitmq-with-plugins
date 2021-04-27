@@ -1,4 +1,4 @@
-FROM rabbitmq:3-management
+FROM rabbitmq:3.8-management
 MAINTAINER Nick Fan "nickfan81@gmail.com"
 
 RUN curl -L -o /tmp/rabbitmq_delayed_message_exchange-3.8.9-0199d11c.ez https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/3.8.9/rabbitmq_delayed_message_exchange-3.8.9-0199d11c.ez && \
