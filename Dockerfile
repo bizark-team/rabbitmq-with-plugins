@@ -11,4 +11,4 @@ RUN set -eux; \
 RUN /usr/bin/curl -L -k -o /tmp/rabbitmq_delayed_message_exchange-3.8.9-0199d11c.ez https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/3.8.9/rabbitmq_delayed_message_exchange-3.8.9-0199d11c.ez && \
     mv /tmp/rabbitmq_delayed_message_exchange-3.8.9-0199d11c.ez /opt/rabbitmq/plugins/
 
-RUN rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange && rabbitmq-plugins list
+RUN rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange rabbitmq_prometheus rabbitmq_mqtt rabbitmq_stomp && rabbitmq-plugins list
